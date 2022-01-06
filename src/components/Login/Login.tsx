@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Login = (): JSX.Element => {
-  return <div>Login Test</div>;
+  return <div data-testid="race-management-login">Login Test</div>;
 };
 
 export default Login;
