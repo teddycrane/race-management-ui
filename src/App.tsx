@@ -9,7 +9,6 @@ export const App = (): JSX.Element => {
   return (
     <div data-testid="home-app">
       <Header />
-      <div>test content</div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
