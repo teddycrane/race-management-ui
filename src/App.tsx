@@ -9,8 +9,8 @@ const LoginPage = loadable(() => import("./components/Login"));
 export const App = (): JSX.Element => {
   return (
     <div data-testid="home-app">
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
