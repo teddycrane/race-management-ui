@@ -28,7 +28,7 @@ export const Header = (): JSX.Element => {
               Race Management
             </Typography>
           </Link>
-          <IconButton onClick={() => navigate("/login")}>
+          <IconButton data-testid="race-management-login-icon" onClick={() => navigate("/login")}>
             <LoginIcon color="inherit" />
           </IconButton>
         </Toolbar>
