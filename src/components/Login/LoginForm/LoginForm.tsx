@@ -1,10 +1,10 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { Controller, useForm } from "react-hook-form";
 import { Box, Button, createTheme, TextField } from "@mui/material";
 
 export const LoginForm = (): JSX.Element => {
   const theme = createTheme();
-  const { control, handleSubmit, watch } = useForm({
+  const { control, handleSubmit } = useForm({
     reValidateMode: "onChange",
   });
 
