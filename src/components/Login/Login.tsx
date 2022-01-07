@@ -3,9 +3,9 @@ import {
   CardContent,
   CardHeader,
   Divider,
-  Typography,
 } from "@mui/material";
 import { Box, createTheme } from "@mui/system";
+import LoginForm from "./LoginForm";
 import React from "react";
 
 export const Login = (): JSX.Element => {
@@ -32,8 +32,8 @@ export const Login = (): JSX.Element => {
       >
         <CardHeader title="Login" />
         <Divider />
-        <CardContent>
-          <Typography variant="body2">Race management </Typography>
+        <CardContent sx={{ width: "90%" }}>
+          <LoginForm />
         </CardContent>
       </Card>
     </Box>

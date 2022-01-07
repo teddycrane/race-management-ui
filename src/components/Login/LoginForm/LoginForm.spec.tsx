@@ -9,4 +9,10 @@ describe("The Login Form", () => {
       screen.getByTestId("race-management-login-form")
     ).toBeInTheDocument();
   });
+
+  it("should render the correct elements", () => {
+    render(<LoginForm />);
+    expect(screen.getByLabelText(/Username/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Password/i)).toBeInTheDocument();
+  });
 });
